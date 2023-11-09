@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    background-color: #28282B;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+/* Header */
+
+header {
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.logo {
+    width: 150px;
+    background-color: #fff5ee;
+    margin: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Main */
+
+main {
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+p {
+    color: white;
+}
+
+section {
+    text-align: center;
+}
+
+section div {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.titulo {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* Footer */
+
+footer {
+    margin: 10px;
+    padding: 10px;
+    border-top: 1px solid white;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    background-color: #050301;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a img {
+    height: 20px;   
+}
+
+.logoWeb {
+    background-color: #fff5ee;  
+    border-radius: 10px; 
+}
+
+/* Index */
+
+.fotoVivo {
+    width: 30%;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+.cajaFotos {
+    text-align: center;
+}
+
+/* Integrantes */
+
+.fotoIntegrantes {
+    border-radius: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+.descripcion {
+    background-color: #3B3C36;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/* Videos */
+
+iframe {
+    border-radius: 30px;
+}
+
+/* Formulario */
+
+form {
+    margin: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type=text],
+select {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 3px;
+}
