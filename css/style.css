@@ -22,8 +22,6 @@ header {
     border-bottom: 1px solid white;
     text-align: center;
     padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
     background-color: black;
 }
 
@@ -31,6 +29,8 @@ header {
     width: 10rem;
     background-color: #fff5ee;
     margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
 }
 
 nav ul li {
@@ -55,7 +55,6 @@ nav ul li a:hover {
     background-color: hsla(195, 83%, 58%, 0.2);
     border-radius: 5rem;
 }
-
 
 /* Main */
 
@@ -102,10 +101,9 @@ section div {
 /* Footer */
 
 footer {
-    margin: 10px;
-    padding: 10px;
+    margin-top: 1rem;
+    padding: 1rem;
     border-top: 1px solid white;
-    text-align: center;
     position: sticky;
     bottom: 0;
     background-color: #050301;
@@ -114,16 +112,16 @@ footer {
 footer ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 footer ul li a img {
-    height: 20px;   
+    height: 1.5rem;   
 }
 
 .logoWeb {
     background-color: #fff5ee;  
-    border-radius: 10px; 
+    border-radius: 1rem; 
 }
 
 /* Index */
