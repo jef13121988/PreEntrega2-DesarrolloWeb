@@ -80,6 +80,7 @@ h2 {
 
 p {
     color: white;
+    margin-top: 1rem;
 }
 
 section {
@@ -148,6 +149,7 @@ footer ul li a img {
 
 iframe {
     border-radius: 30px;
+    width: 100%;
 }
 
 /* Formulario */
