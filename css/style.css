@@ -86,11 +86,6 @@ section {
     text-align: center;
 }
 
-section div {
-    display: inline-block;
-    margin: 0 20px;
-}
-
 .titulo {
     background-color: darkslategray;
     border-radius: 30px;
@@ -140,14 +135,13 @@ footer ul li a img {
 
 .fotoIntegrantes {
     border-radius: 300px;
-    width: 300px;
-    margin: 10px;
+    width: 100%;
 }
 
 .descripcion {
     background-color: #3B3C36;
     border-radius: 30px;
-    padding: 10px;
+    padding: 1rem;
 }
 
 /* Videos */
