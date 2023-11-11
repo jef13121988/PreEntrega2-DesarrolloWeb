@@ -105,6 +105,10 @@ footer {
     background-color: #050301;
 }
 
+footer ul {
+    margin-top: 1rem;
+}
+
 footer ul li {
     list-style: none;
     display: inline-block;
