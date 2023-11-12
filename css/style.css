@@ -105,6 +105,12 @@ footer {
     background-color: #050301;
 }
 
+@media (max-width: 640px) {
+    footer {
+        position: static;
+    }
+}
+
 footer ul {
     margin-top: 1rem;
 }
@@ -182,12 +188,18 @@ select {
 
 textarea {
     display: block;
-    width: 30%;
+    width: 660px;
     padding: 10px;
     border: 3px solid gray;
     border-radius: 10px;
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 720px) {
+    textarea {
+        width: 100%;
+    }
 }
 
 input[type=submit],
