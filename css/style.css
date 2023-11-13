@@ -136,6 +136,7 @@ footer ul li a img {
     width: 30%;
     margin: 5px;
     border-radius: 100px;
+    filter: drop-shadow(0 0 1rem darkslategrey);
 }
 
 .cajaFotos {
@@ -147,6 +148,7 @@ footer ul li a img {
 .fotoIntegrantes {
     border-radius: 300px;
     width: 100%;
+    filter: drop-shadow(5px 5px 0.1rem rgb(49, 0, 10));
 }
 
 .descripcion {
