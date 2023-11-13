@@ -216,3 +216,11 @@ input[type=reset] {
     cursor: pointer;
     margin: 3px;
 }
+
+/* Ajuste Ancho Mapa */
+
+@media (min-width: 660px) {
+    .mapa {
+        width: 600px;
+    }
+}
