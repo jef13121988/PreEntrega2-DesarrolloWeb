@@ -1,12 +1,19 @@
+/* Reseteo de padding y margin */
+
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Importo fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 /* Body */
 
 body {
     background-color: #28282B;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -22,7 +29,8 @@ header {
     border-bottom: 1px solid white;
     text-align: center;
     padding: 1rem 2rem;
-    background-color: black;
+    z-index: 10;
+    background-image: url("../img/fondo.webp");
 }
 
 .logo {
@@ -43,8 +51,9 @@ nav ul li a {
     padding: 0.5rem 0.5rem;
 }
 
+/* COnfiguración para la página activa */
 [aria-current]:not([aria-current="false"]) {
-    background-color: darkslategrey;
+    background-color: darkslategray;
     border-radius: 5rem;
     &:hover {
         background-color: rgb(31, 51, 51);
@@ -59,16 +68,28 @@ nav ul li a:hover {
 /* Main */
 
 main {
-    margin: 10px;
-    padding: 10px;
+    margin-bottom: 3rem;
 }
 
 h1 {
     text-align: center;
-    text-decoration: underline;
+
+    /* Fondo especial para títulos */
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+
     color: white;
     margin-bottom: 30px;
     font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px;
 }
 
 h2 {
@@ -76,6 +97,7 @@ h2 {
     color: white;
     margin: 20px 0;
     font-size: 30px;
+    text-decoration: underline;
 }
 
 p {
@@ -105,6 +127,7 @@ footer {
     background-color: #050301;
 }
 
+/* Que el footer deje de ser sticker para que no se junten los íconos */
 @media (max-width: 640px) {
     footer {
         position: static;
@@ -136,7 +159,7 @@ footer ul li a img {
     width: 30%;
     margin: 5px;
     border-radius: 100px;
-    filter: drop-shadow(0 0 1rem darkslategrey);
+    filter: drop-shadow(0 0 1rem darkslategray);
 }
 
 .cajaFotos {
@@ -148,7 +171,7 @@ footer ul li a img {
 .fotoIntegrantes {
     border-radius: 300px;
     width: 100%;
-    filter: drop-shadow(5px 5px 0.1rem rgb(49, 0, 10));
+    filter: drop-shadow(2px 2px 0.1rem rgb(49, 0, 10));
 }
 
 .descripcion {
@@ -182,23 +205,33 @@ select {
     display: block;
     width: 300px;
     padding: 10px;
-    border: 3px solid gray;
+    border: 3px solid darkslategray;
     border-radius: 10px;
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+/* Contorno y relleno del formulario cuando se lo selecciona */
+input[type=text]:focus, 
+select:focus,
+textarea:focus { 
+    outline: 2px solid hsla(195, 83%, 58%, 0.2);
+    background-color: rgba(40, 60, 70);
+    color: white;
 }
 
 textarea {
     display: block;
     width: 660px;
     padding: 10px;
-    border: 3px solid gray;
+    border: 3px solid darkslategray;
     border-radius: 10px;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-@media (max-width: 720px) {
+/* El cuadro de mensaje deja de tener tamaño fijo para convivir con el mapa */
+@media (max-width: 1440px) {
     textarea {
         width: 100%;
     }
@@ -208,7 +241,7 @@ input[type=submit],
 input[type=reset] {
     background-color: #333;
     color: white;
-    border: none;
+    border: 3px solid #28282B;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
@@ -217,10 +250,15 @@ input[type=reset] {
     margin: 3px;
 }
 
-/* Ajuste Ancho Mapa */
+/* Borde y relleno de los botones cuando se los selecciona */
+input[type=submit]:active,
+input[type=reset]:active {
+    background-color: #222;
+    border: 3px solid darkslategray;
+}
 
-@media (min-width: 660px) {
-    .mapa {
-        width: 600px;
-    }
+/* Mapa */
+
+.mapa {
+    outline: 3px solid darkslategray;
 }
