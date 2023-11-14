@@ -51,7 +51,7 @@ nav ul li a {
     padding: 0.5rem 0.5rem;
 }
 
-/* COnfiguración para la página activa */
+/* Configuración para la página activa */
 [aria-current]:not([aria-current="false"]) {
     background-color: darkslategray;
     border-radius: 5rem;
@@ -162,8 +162,28 @@ footer ul li a img {
     filter: drop-shadow(0 0 1rem darkslategray);
 }
 
+.fotoSola {
+    width: 100%;
+    margin: 5px;
+    border-radius: 300px;
+    filter: drop-shadow(0 0 1rem darkslategray);
+}
+
 .cajaFotos {
     text-align: center;
+}
+
+article {
+    background-color: #2d2e29;
+    border-radius: 30px;
+    padding: 1rem;
+    border: darkslategray 3px solid;
+}
+
+article p {
+    background-color: #3B3C36;
+    border-radius: 30px;
+    padding: 1rem;
 }
 
 /* Integrantes */
