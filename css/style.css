@@ -52,12 +52,14 @@ nav ul li a {
 }
 
 /* Configuración para la página activa */
-[aria-current]:not([aria-current="false"]) {
+[aria-current="page"] {
     background-color: darkslategray;
     border-radius: 5rem;
-    &:hover {
-        background-color: rgb(31, 51, 51);
-    }
+}
+
+/* Hover de la página activa */
+[aria-current="page"]:hover {
+    background-color: rgb(31, 51, 51);
 }
 
 nav ul li a:hover {
